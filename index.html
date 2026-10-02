@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades sobre Biomedicina</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dff3ff;
+            color: #245269;
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4b9fc5;
+        }
+
+        .mensagem {
+            font-size: 18px;
+            margin: 30px 0;
+            line-height: 1.6;
+        }
+
+        .botao {
+            background-color: #8fd3f4;
+            color: #17445a;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #6fc4eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🔬 Curiosidades sobre Biomedicina</h1>
+
+        <p class="mensagem">
+            Clique no botão para descobrir uma curiosidade sobre Biomedicina!
+        </p>
+
+        <button class="botao">Mostrar curiosidade</button>
+    </div>
+
+    <script>
+        const botao = document.querySelector(".botao");
+        const mensagem = document.querySelector(".mensagem");
+
+        function mostrarMensagem() {
+            mensagem.textContent =
+                "🧬 Curiosidade: a Biomedicina estuda o funcionamento do corpo humano e pode atuar em áreas como análises clínicas, genética, microbiologia e pesquisa científica!";
+        }
+
+        botao.addEventListener("click", mostrarMensagem);
+    </script>
+
+</body>
+</html>
